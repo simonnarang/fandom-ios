@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1308487C1CAC63DB00C2CE6C /* ChangePWTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308487B1CAC63DB00C2CE6C /* ChangePWTableViewController.swift */; };
+		1308487E1CAC9D6A00C2CE6C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1308487D1CAC9D6A00C2CE6C /* FeedTableViewCell.swift */; };
+		13144EC41C28655A00ADACC1 /* ShareCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13144EC31C28655A00ADACC1 /* ShareCameraViewController.swift */; };
+		131BDCC21C01615D00BA5C34 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BDCC11C01615D00BA5C34 /* ProfileViewController.swift */; };
+		131BDCC41C0162E500BA5C34 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BDCC31C0162E500BA5C34 /* FeedTableViewController.swift */; };
+		131BDCC81C016B8900BA5C34 /* PreferecesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BDCC71C016B8900BA5C34 /* PreferecesTableViewController.swift */; };
+		131BDCCC1C03D02200BA5C34 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BDCCB1C03D02200BA5C34 /* SearchTableViewController.swift */; };
+		132EF7CE1C8A6A3400467761 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132EF7CC1C8A6A3400467761 /* Fabric.framework */; };
+		132EF7CF1C8A6A3400467761 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132EF7CD1C8A6A3400467761 /* Crashlytics.framework */; };
+		13446B461C0A4DC60023EBB8 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13446B451C0A4DC60023EBB8 /* PostViewController.swift */; };
+		13446B4C1C0B492A0023EBB8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13446B4B1C0B492A0023EBB8 /* TabBarViewController.swift */; };
+		13446B501C0B67540023EBB8 /* ShareLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13446B4F1C0B67540023EBB8 /* ShareLinkViewController.swift */; };
+		137820081C415A1C00817D6A /* ShareToFandomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137820071C415A1C00817D6A /* ShareToFandomTableViewController.swift */; };
+		138A83611B8F65DB009AAE88 /* RedisClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A83571B8F65DB009AAE88 /* RedisClient.swift */; };
+		138A83621B8F65DB009AAE88 /* RedisClient+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A83581B8F65DB009AAE88 /* RedisClient+Connection.swift */; };
+		138A83631B8F65DB009AAE88 /* RedisClient+Hashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A83591B8F65DB009AAE88 /* RedisClient+Hashes.swift */; };
+		138A83641B8F65DB009AAE88 /* RedisClient+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A835A1B8F65DB009AAE88 /* RedisClient+Keys.swift */; };
+		138A83651B8F65DB009AAE88 /* RedisClient+Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A835B1B8F65DB009AAE88 /* RedisClient+Lists.swift */; };
+		138A83661B8F65DB009AAE88 /* RedisClient+PubSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A835C1B8F65DB009AAE88 /* RedisClient+PubSub.swift */; };
+		138A83671B8F65DB009AAE88 /* RedisClient+Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A835D1B8F65DB009AAE88 /* RedisClient+Sets.swift */; };
+		138A83681B8F65DB009AAE88 /* RedisClient+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A835E1B8F65DB009AAE88 /* RedisClient+Strings.swift */; };
+		138A83691B8F65DB009AAE88 /* RedisPubSubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A835F1B8F65DB009AAE88 /* RedisPubSubClient.swift */; };
+		138A836A1B8F65DB009AAE88 /* RESPUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A83601B8F65DB009AAE88 /* RESPUtilities.swift */; };
+		13C0B0201C1E5D77002CA4D8 /* ShareGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B01F1C1E5D77002CA4D8 /* ShareGalleryViewController.swift */; };
+		13DB40581B8CA9B100E4A3C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB40571B8CA9B100E4A3C8 /* AppDelegate.swift */; };
+		13DB405A1B8CA9B100E4A3C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB40591B8CA9B100E4A3C8 /* ViewController.swift */; };
+		13DB405D1B8CA9B100E4A3C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DB405B1B8CA9B100E4A3C8 /* Main.storyboard */; };
+		13DB405F1B8CA9B100E4A3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DB405E1B8CA9B100E4A3C8 /* Assets.xcassets */; };
+		13DB40621B8CA9B100E4A3C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DB40601B8CA9B100E4A3C8 /* LaunchScreen.storyboard */; };
+		13DB406D1B8CA9B100E4A3C8 /* FandommTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB406C1B8CA9B100E4A3C8 /* FandommTests.swift */; };
+		13DB40781B8CA9B100E4A3C8 /* FandommUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB40771B8CA9B100E4A3C8 /* FandommUITests.swift */; };
+		FD0ECCB01C6FFFC70089001D /* ShareToFandomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0ECCAF1C6FFFC70089001D /* ShareToFandomNavigationViewController.swift */; };
+		FD768D3E1C6930B00076FA92 /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD768D3D1C6930B00076FA92 /* ChangeUsernameViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13DB40691B8CA9B100E4A3C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13DB404C1B8CA9B100E4A3C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13DB40531B8CA9B100E4A3C8;
+			remoteInfo = Fandomm;
+		};
+		13DB40741B8CA9B100E4A3C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13DB404C1B8CA9B100E4A3C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13DB40531B8CA9B100E4A3C8;
+			remoteInfo = Fandomm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1308487B1CAC63DB00C2CE6C /* ChangePWTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePWTableViewController.swift; sourceTree = "<group>"; };
+		1308487D1CAC9D6A00C2CE6C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		13144EC31C28655A00ADACC1 /* ShareCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCameraViewController.swift; sourceTree = "<group>"; };
+		131BDCC11C01615D00BA5C34 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		131BDCC31C0162E500BA5C34 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		131BDCC71C016B8900BA5C34 /* PreferecesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferecesTableViewController.swift; sourceTree = "<group>"; };
+		131BDCCB1C03D02200BA5C34 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		132EF7CC1C8A6A3400467761 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		132EF7CD1C8A6A3400467761 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		13446B451C0A4DC60023EBB8 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		13446B4B1C0B492A0023EBB8 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		13446B4F1C0B67540023EBB8 /* ShareLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareLinkViewController.swift; sourceTree = "<group>"; };
+		137820071C415A1C00817D6A /* ShareToFandomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareToFandomTableViewController.swift; sourceTree = "<group>"; };
+		138A83561B8F65DB009AAE88 /* Redis-Framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Redis-Framework.h"; sourceTree = "<group>"; };
+		138A83571B8F65DB009AAE88 /* RedisClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedisClient.swift; sourceTree = "<group>"; };
+		138A83581B8F65DB009AAE88 /* RedisClient+Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RedisClient+Connection.swift"; sourceTree = "<group>"; };
+		138A83591B8F65DB009AAE88 /* RedisClient+Hashes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RedisClient+Hashes.swift"; sourceTree = "<group>"; };
+		138A835A1B8F65DB009AAE88 /* RedisClient+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RedisClient+Keys.swift"; sourceTree = "<group>"; };
+		138A835B1B8F65DB009AAE88 /* RedisClient+Lists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RedisClient+Lists.swift"; sourceTree = "<group>"; };
+		138A835C1B8F65DB009AAE88 /* RedisClient+PubSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RedisClient+PubSub.swift"; sourceTree = "<group>"; };
+		138A835D1B8F65DB009AAE88 /* RedisClient+Sets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RedisClient+Sets.swift"; sourceTree = "<group>"; };
+		138A835E1B8F65DB009AAE88 /* RedisClient+Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RedisClient+Strings.swift"; sourceTree = "<group>"; };
+		138A835F1B8F65DB009AAE88 /* RedisPubSubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedisPubSubClient.swift; sourceTree = "<group>"; };
+		138A83601B8F65DB009AAE88 /* RESPUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESPUtilities.swift; sourceTree = "<group>"; };
+		13C0B01F1C1E5D77002CA4D8 /* ShareGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareGalleryViewController.swift; sourceTree = "<group>"; };
+		13DB40541B8CA9B100E4A3C8 /* Fandomm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fandomm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DB40571B8CA9B100E4A3C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13DB40591B8CA9B100E4A3C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13DB405C1B8CA9B100E4A3C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13DB405E1B8CA9B100E4A3C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13DB40611B8CA9B100E4A3C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13DB40631B8CA9B100E4A3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13DB40681B8CA9B100E4A3C8 /* FandommTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FandommTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DB406C1B8CA9B100E4A3C8 /* FandommTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandommTests.swift; sourceTree = "<group>"; };
+		13DB406E1B8CA9B100E4A3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13DB40731B8CA9B100E4A3C8 /* FandommUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FandommUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DB40771B8CA9B100E4A3C8 /* FandommUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FandommUITests.swift; sourceTree = "<group>"; };
+		13DB40791B8CA9B100E4A3C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0ECCAF1C6FFFC70089001D /* ShareToFandomNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareToFandomNavigationViewController.swift; sourceTree = "<group>"; };
+		FD768D3D1C6930B00076FA92 /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUsernameViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13DB40511B8CA9B100E4A3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132EF7CF1C8A6A3400467761 /* Crashlytics.framework in Frameworks */,
+				132EF7CE1C8A6A3400467761 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DB40651B8CA9B100E4A3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DB40701B8CA9B100E4A3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1308487F1CAF33C200C2CE6C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FD0ECCAF1C6FFFC70089001D /* ShareToFandomNavigationViewController.swift */,
+				137820071C415A1C00817D6A /* ShareToFandomTableViewController.swift */,
+				13446B451C0A4DC60023EBB8 /* PostViewController.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		130848801CAF33ED00C2CE6C /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				13446B4F1C0B67540023EBB8 /* ShareLinkViewController.swift */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		130848811CAF340C00C2CE6C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				13C0B01F1C1E5D77002CA4D8 /* ShareGalleryViewController.swift */,
+				13144EC31C28655A00ADACC1 /* ShareCameraViewController.swift */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		131BDCC91C016BA400BA5C34 /* RedisLib */ = {
+			isa = PBXGroup;
+			children = (
+				138A83561B8F65DB009AAE88 /* Redis-Framework.h */,
+				138A83571B8F65DB009AAE88 /* RedisClient.swift */,
+				138A83581B8F65DB009AAE88 /* RedisClient+Connection.swift */,
+				138A83591B8F65DB009AAE88 /* RedisClient+Hashes.swift */,
+				138A835A1B8F65DB009AAE88 /* RedisClient+Keys.swift */,
+				138A835B1B8F65DB009AAE88 /* RedisClient+Lists.swift */,
+				138A835C1B8F65DB009AAE88 /* RedisClient+PubSub.swift */,
+				138A835D1B8F65DB009AAE88 /* RedisClient+Sets.swift */,
+				138A835E1B8F65DB009AAE88 /* RedisClient+Strings.swift */,
+				138A835F1B8F65DB009AAE88 /* RedisPubSubClient.swift */,
+				138A83601B8F65DB009AAE88 /* RESPUtilities.swift */,
+			);
+			name = RedisLib;
+			sourceTree = "<group>";
+		};
+		13446B511C0B80E70023EBB8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				131BDCC11C01615D00BA5C34 /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		13446B521C0B80F20023EBB8 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				131BDCC31C0162E500BA5C34 /* FeedTableViewController.swift */,
+				1308487D1CAC9D6A00C2CE6C /* FeedTableViewCell.swift */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		13446B531C0B80FD0023EBB8 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				131BDCC71C016B8900BA5C34 /* PreferecesTableViewController.swift */,
+				FD768D3D1C6930B00076FA92 /* ChangeUsernameViewController.swift */,
+				1308487B1CAC63DB00C2CE6C /* ChangePWTableViewController.swift */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		13446B541C0B81060023EBB8 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				130848811CAF340C00C2CE6C /* Images */,
+				130848801CAF33ED00C2CE6C /* Text */,
+				1308487F1CAF33C200C2CE6C /* General */,
+			);
+			name = Post;
+			sourceTree = "<group>";
+		};
+		13446B551C0B81170023EBB8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				131BDCCB1C03D02200BA5C34 /* SearchTableViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		13446B561C0B81220023EBB8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				13DB40631B8CA9B100E4A3C8 /* Info.plist */,
+				13DB40571B8CA9B100E4A3C8 /* AppDelegate.swift */,
+				13DB40591B8CA9B100E4A3C8 /* ViewController.swift */,
+				13446B4B1C0B492A0023EBB8 /* TabBarViewController.swift */,
+				13DB405B1B8CA9B100E4A3C8 /* Main.storyboard */,
+				13DB40601B8CA9B100E4A3C8 /* LaunchScreen.storyboard */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		13DB404B1B8CA9B100E4A3C8 = {
+			isa = PBXGroup;
+			children = (
+				13DB40561B8CA9B100E4A3C8 /* Fandomm */,
+				13DB406B1B8CA9B100E4A3C8 /* FandommTests */,
+				13DB40761B8CA9B100E4A3C8 /* FandommUITests */,
+				13DB40551B8CA9B100E4A3C8 /* Products */,
+				132EF7CC1C8A6A3400467761 /* Fabric.framework */,
+				132EF7CD1C8A6A3400467761 /* Crashlytics.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		13DB40551B8CA9B100E4A3C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13DB40541B8CA9B100E4A3C8 /* Fandomm.app */,
+				13DB40681B8CA9B100E4A3C8 /* FandommTests.xctest */,
+				13DB40731B8CA9B100E4A3C8 /* FandommUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13DB40561B8CA9B100E4A3C8 /* Fandomm */ = {
+			isa = PBXGroup;
+			children = (
+				13DB405E1B8CA9B100E4A3C8 /* Assets.xcassets */,
+				131BDCC91C016BA400BA5C34 /* RedisLib */,
+				13446B561C0B81220023EBB8 /* Other */,
+				13446B521C0B80F20023EBB8 /* Feed */,
+				13446B551C0B81170023EBB8 /* Search */,
+				13446B541C0B81060023EBB8 /* Post */,
+				13446B511C0B80E70023EBB8 /* Profile */,
+				13446B531C0B80FD0023EBB8 /* Preferences */,
+			);
+			path = Fandomm;
+			sourceTree = "<group>";
+		};
+		13DB406B1B8CA9B100E4A3C8 /* FandommTests */ = {
+			isa = PBXGroup;
+			children = (
+				13DB406C1B8CA9B100E4A3C8 /* FandommTests.swift */,
+				13DB406E1B8CA9B100E4A3C8 /* Info.plist */,
+			);
+			path = FandommTests;
+			sourceTree = "<group>";
+		};
+		13DB40761B8CA9B100E4A3C8 /* FandommUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13DB40771B8CA9B100E4A3C8 /* FandommUITests.swift */,
+				13DB40791B8CA9B100E4A3C8 /* Info.plist */,
+			);
+			path = FandommUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13DB40531B8CA9B100E4A3C8 /* Fandomm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13DB407C1B8CA9B100E4A3C8 /* Build configuration list for PBXNativeTarget "Fandomm" */;
+			buildPhases = (
+				13DB40501B8CA9B100E4A3C8 /* Sources */,
+				13DB40511B8CA9B100E4A3C8 /* Frameworks */,
+				13DB40521B8CA9B100E4A3C8 /* Resources */,
+				132EF7CB1C8A69DA00467761 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fandomm;
+			productName = Fandomm;
+			productReference = 13DB40541B8CA9B100E4A3C8 /* Fandomm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13DB40671B8CA9B100E4A3C8 /* FandommTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13DB407F1B8CA9B100E4A3C8 /* Build configuration list for PBXNativeTarget "FandommTests" */;
+			buildPhases = (
+				13DB40641B8CA9B100E4A3C8 /* Sources */,
+				13DB40651B8CA9B100E4A3C8 /* Frameworks */,
+				13DB40661B8CA9B100E4A3C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13DB406A1B8CA9B100E4A3C8 /* PBXTargetDependency */,
+			);
+			name = FandommTests;
+			productName = FandommTests;
+			productReference = 13DB40681B8CA9B100E4A3C8 /* FandommTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13DB40721B8CA9B100E4A3C8 /* FandommUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13DB40821B8CA9B100E4A3C8 /* Build configuration list for PBXNativeTarget "FandommUITests" */;
+			buildPhases = (
+				13DB406F1B8CA9B100E4A3C8 /* Sources */,
+				13DB40701B8CA9B100E4A3C8 /* Frameworks */,
+				13DB40711B8CA9B100E4A3C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13DB40751B8CA9B100E4A3C8 /* PBXTargetDependency */,
+			);
+			name = FandommUITests;
+			productName = FandommUITests;
+			productReference = 13DB40731B8CA9B100E4A3C8 /* FandommUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13DB404C1B8CA9B100E4A3C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Simon Narang";
+				TargetAttributes = {
+					13DB40531B8CA9B100E4A3C8 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = X4CAW9UQSK;
+					};
+					13DB40671B8CA9B100E4A3C8 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 13DB40531B8CA9B100E4A3C8;
+					};
+					13DB40721B8CA9B100E4A3C8 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 13DB40531B8CA9B100E4A3C8;
+					};
+				};
+			};
+			buildConfigurationList = 13DB404F1B8CA9B100E4A3C8 /* Build configuration list for PBXProject "Fandomm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13DB404B1B8CA9B100E4A3C8;
+			productRefGroup = 13DB40551B8CA9B100E4A3C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13DB40531B8CA9B100E4A3C8 /* Fandomm */,
+				13DB40671B8CA9B100E4A3C8 /* FandommTests */,
+				13DB40721B8CA9B100E4A3C8 /* FandommUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13DB40521B8CA9B100E4A3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DB40621B8CA9B100E4A3C8 /* LaunchScreen.storyboard in Resources */,
+				13DB405F1B8CA9B100E4A3C8 /* Assets.xcassets in Resources */,
+				13DB405D1B8CA9B100E4A3C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DB40661B8CA9B100E4A3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DB40711B8CA9B100E4A3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		132EF7CB1C8A69DA00467761 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 5c85f5c9ff8456f4dd81688a21139e6edd3a8b09 ca5903d7705285e62f880045229e1040edb6a75ae899b07b7f761628e2439fcb";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13DB40501B8CA9B100E4A3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138A836A1B8F65DB009AAE88 /* RESPUtilities.swift in Sources */,
+				13144EC41C28655A00ADACC1 /* ShareCameraViewController.swift in Sources */,
+				131BDCCC1C03D02200BA5C34 /* SearchTableViewController.swift in Sources */,
+				13446B4C1C0B492A0023EBB8 /* TabBarViewController.swift in Sources */,
+				138A83621B8F65DB009AAE88 /* RedisClient+Connection.swift in Sources */,
+				1308487E1CAC9D6A00C2CE6C /* FeedTableViewCell.swift in Sources */,
+				13C0B0201C1E5D77002CA4D8 /* ShareGalleryViewController.swift in Sources */,
+				137820081C415A1C00817D6A /* ShareToFandomTableViewController.swift in Sources */,
+				138A83631B8F65DB009AAE88 /* RedisClient+Hashes.swift in Sources */,
+				13446B461C0A4DC60023EBB8 /* PostViewController.swift in Sources */,
+				13DB405A1B8CA9B100E4A3C8 /* ViewController.swift in Sources */,
+				131BDCC21C01615D00BA5C34 /* ProfileViewController.swift in Sources */,
+				138A83651B8F65DB009AAE88 /* RedisClient+Lists.swift in Sources */,
+				131BDCC41C0162E500BA5C34 /* FeedTableViewController.swift in Sources */,
+				138A83671B8F65DB009AAE88 /* RedisClient+Sets.swift in Sources */,
+				138A83681B8F65DB009AAE88 /* RedisClient+Strings.swift in Sources */,
+				138A83611B8F65DB009AAE88 /* RedisClient.swift in Sources */,
+				13446B501C0B67540023EBB8 /* ShareLinkViewController.swift in Sources */,
+				138A83691B8F65DB009AAE88 /* RedisPubSubClient.swift in Sources */,
+				1308487C1CAC63DB00C2CE6C /* ChangePWTableViewController.swift in Sources */,
+				138A83661B8F65DB009AAE88 /* RedisClient+PubSub.swift in Sources */,
+				138A83641B8F65DB009AAE88 /* RedisClient+Keys.swift in Sources */,
+				FD0ECCB01C6FFFC70089001D /* ShareToFandomNavigationViewController.swift in Sources */,
+				131BDCC81C016B8900BA5C34 /* PreferecesTableViewController.swift in Sources */,
+				FD768D3E1C6930B00076FA92 /* ChangeUsernameViewController.swift in Sources */,
+				13DB40581B8CA9B100E4A3C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DB40641B8CA9B100E4A3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DB406D1B8CA9B100E4A3C8 /* FandommTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13DB406F1B8CA9B100E4A3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DB40781B8CA9B100E4A3C8 /* FandommUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13DB406A1B8CA9B100E4A3C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13DB40531B8CA9B100E4A3C8 /* Fandomm */;
+			targetProxy = 13DB40691B8CA9B100E4A3C8 /* PBXContainerItemProxy */;
+		};
+		13DB40751B8CA9B100E4A3C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13DB40531B8CA9B100E4A3C8 /* Fandomm */;
+			targetProxy = 13DB40741B8CA9B100E4A3C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13DB405B1B8CA9B100E4A3C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13DB405C1B8CA9B100E4A3C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13DB40601B8CA9B100E4A3C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13DB40611B8CA9B100E4A3C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B03F9D1C851A7900900D2F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		13B03F9E1C851A7900900D2F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Fandomm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandom.fandomm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		13B03F9F1C851A7900900D2F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FandommTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FandommTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fandomm.app/Fandomm";
+			};
+			name = Distribution;
+		};
+		13B03FA01C851A7900900D2F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FandommUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FandommUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fandomm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Distribution;
+		};
+		13DB407A1B8CA9B100E4A3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13DB407B1B8CA9B100E4A3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13DB407D1B8CA9B100E4A3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Fandomm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandom.fandomm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13DB407E1B8CA9B100E4A3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Fandomm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fandom.fandomm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13DB40801B8CA9B100E4A3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FandommTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FandommTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fandomm.app/Fandomm";
+			};
+			name = Debug;
+		};
+		13DB40811B8CA9B100E4A3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FandommTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FandommTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fandomm.app/Fandomm";
+			};
+			name = Release;
+		};
+		13DB40831B8CA9B100E4A3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FandommUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FandommUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fandomm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		13DB40841B8CA9B100E4A3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FandommUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FandommUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fandomm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13DB404F1B8CA9B100E4A3C8 /* Build configuration list for PBXProject "Fandomm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DB407A1B8CA9B100E4A3C8 /* Debug */,
+				13DB407B1B8CA9B100E4A3C8 /* Release */,
+				13B03F9D1C851A7900900D2F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13DB407C1B8CA9B100E4A3C8 /* Build configuration list for PBXNativeTarget "Fandomm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DB407D1B8CA9B100E4A3C8 /* Debug */,
+				13DB407E1B8CA9B100E4A3C8 /* Release */,
+				13B03F9E1C851A7900900D2F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13DB407F1B8CA9B100E4A3C8 /* Build configuration list for PBXNativeTarget "FandommTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DB40801B8CA9B100E4A3C8 /* Debug */,
+				13DB40811B8CA9B100E4A3C8 /* Release */,
+				13B03F9F1C851A7900900D2F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13DB40821B8CA9B100E4A3C8 /* Build configuration list for PBXNativeTarget "FandommUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13DB40831B8CA9B100E4A3C8 /* Debug */,
+				13DB40841B8CA9B100E4A3C8 /* Release */,
+				13B03FA01C851A7900900D2F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13DB404C1B8CA9B100E4A3C8 /* Project object */;
+}
