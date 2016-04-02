@@ -31,11 +31,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.redisClient.lRem("thefandomfandom", count: 3, value: "I wonder if Will will ever see this? will will?") { (int, error) -> Void in
-            
-        }
-        
+        /*self.redisClient.lPush("thefandomfandom", values: ["I am cool -varun", "Bob is twitterific -bob"]) { (int, error) -> Void in
+            if error == nil {
+                print("int: \(int)")
+            }else{
+                print("err: \(error)")
+            }
+        }*/
+
         self.username.delegate = self
         self.password.delegate = self
        

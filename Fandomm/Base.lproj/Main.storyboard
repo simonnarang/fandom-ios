@@ -435,13 +435,49 @@
                     </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="logOutSegue" id="JRm-fn-e1u"/>
-                        <segue destination="RvP-KU-0cc" kind="show" identifier="changePassword" id="U4D-FS-vUI"/>
                         <segue destination="Xew-x2-0vS" kind="show" identifier="changeUsername" id="QsB-J7-5Dz"/>
+                        <segue destination="bme-2N-9y9" kind="show" identifier="changePassword" id="lvF-MG-b1I"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Sr-Rv-jpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2069" y="2239"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="HHo-dA-Jba">
+            <objects>
+                <tableViewController id="bme-2N-9y9" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nRD-Kj-4Kb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="txw-Dr-URc">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="txw-Dr-URc" id="bwk-Cc-H3C">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dsC-tq-v1o">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dsC-tq-v1o" id="xaZ-mg-gFV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bme-2N-9y9" id="MZi-Pl-aWs"/>
+                            <outlet property="delegate" destination="bme-2N-9y9" id="imw-fO-y7Y"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQW-9t-4KW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2069" y="3017"/>
         </scene>
         <!--Change Username View Controller-->
         <scene sceneID="nge-R3-PAu">
@@ -785,84 +821,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Det-gz-idA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1356" y="3017"/>
-        </scene>
-        <!--CHANGE USERNAME-->
-        <scene sceneID="Xos-bT-aEx">
-            <objects>
-                <viewController title="CHANGE USERNAME" id="RvP-KU-0cc" customClass="ChangePWTableViewController" customModule="Fandomm" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="D5u-RG-fMr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.75686274509999996" green="0.035294117649999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="separatorColor" red="0.42745098040000001" green="0.1137254902" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
-                        <sections>
-                            <tableViewSection id="Qff-vV-1Hw">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4XK-tQ-kfe">
-                                        <rect key="frame" x="0.0" y="99" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4XK-tQ-kfe" id="pyO-Gn-oS7">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="OLD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcH-vi-j9s">
-                                                    <rect key="frame" x="33" y="7" width="534" height="30"/>
-                                                    <color key="textColor" red="0.42745098040000001" green="0.1137254902" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="EcH-vi-j9s" firstAttribute="centerX" secondItem="pyO-Gn-oS7" secondAttribute="centerX" id="6WA-J3-VaS"/>
-                                                <constraint firstItem="EcH-vi-j9s" firstAttribute="top" secondItem="pyO-Gn-oS7" secondAttribute="topMargin" constant="-1" id="Mc4-rE-bF1"/>
-                                                <constraint firstItem="EcH-vi-j9s" firstAttribute="centerY" secondItem="pyO-Gn-oS7" secondAttribute="centerY" id="ca0-rA-xhD"/>
-                                                <constraint firstItem="EcH-vi-j9s" firstAttribute="leading" secondItem="pyO-Gn-oS7" secondAttribute="leadingMargin" constant="25" id="kin-Mz-sBO"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" showsReorderControl="YES" indentationWidth="10" rowHeight="49" id="HcK-Gt-4T5">
-                                        <rect key="frame" x="0.0" y="143" width="600" height="49"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HcK-Gt-4T5" id="NXF-ZR-Atv">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="48"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="NEW" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Th1-Cc-rQS">
-                                                    <rect key="frame" x="35" y="10" width="524" height="30"/>
-                                                    <color key="textColor" red="0.42745098040000001" green="0.1137254902" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <inset key="separatorInset" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iYO-1d-0x7">
-                                        <rect key="frame" x="0.0" y="192" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iYO-1d-0x7" id="rQE-g3-4ru">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CONFIRM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-9z-3eE">
-                                                    <rect key="frame" x="36" y="7" width="523" height="30"/>
-                                                    <color key="textColor" red="0.42745098040000001" green="0.1137254902" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                    </tableView>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g4w-T0-3G2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2069" y="3017"/>
         </scene>
         <!--Share Camera View Controller-->
         <scene sceneID="jo0-Za-3fM">

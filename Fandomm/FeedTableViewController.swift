@@ -62,8 +62,8 @@ class FeedTableViewController: UITableViewController {
                 for fandommpost in array {
                         self.postFromDB = fandommpost as! String
                         self.newPost = self.postFromDB.componentsSeparatedByString(self.delimiter)
-                        self.thearray.append(self.postFromDB)
-                        self.theUsernamesArray.append(self.postFromDB)
+                        self.thearray.append(self.newPost[0])
+                        self.theUsernamesArray.append(self.newPost[1])
                     
                     
                 }
