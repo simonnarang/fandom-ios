@@ -1,20 +1,22 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "453D7A9DE501C0EBE45F88D0E44B028188C9F5B7",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "44ACF144B8A77F275683FF48DDC0295652584BFA",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "4D9D68AFFE5A4B34160C1E06B1313FBAEA801887" : 0,
+    "44ACF144B8A77F275683FF48DDC0295652584BFA" : 0,
     "EEF322F39DC3CA465F79C1A9CCB519A047E31DD1" : 0,
-    "453D7A9DE501C0EBE45F88D0E44B028188C9F5B7" : 0,
-    "0B871573836734C6E8B52048DC0B03DFD2EDBD8A" : 0
+    "4D9D68AFFE5A4B34160C1E06B1313FBAEA801887" : 0,
+    "0B871573836734C6E8B52048DC0B03DFD2EDBD8A" : 0,
+    "453D7A9DE501C0EBE45F88D0E44B028188C9F5B7" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "66D384A4-375D-4771-BA85-FC6AB0C7F812",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "4D9D68AFFE5A4B34160C1E06B1313FBAEA801887" : "",
+    "44ACF144B8A77F275683FF48DDC0295652584BFA" : "Fandom-IOS-master%2018-58-09-267\/",
     "EEF322F39DC3CA465F79C1A9CCB519A047E31DD1" : "Fandomm\/",
-    "453D7A9DE501C0EBE45F88D0E44B028188C9F5B7" : "Fandom-IOS\/",
-    "0B871573836734C6E8B52048DC0B03DFD2EDBD8A" : "Fandom-IOS-master\/"
+    "4D9D68AFFE5A4B34160C1E06B1313FBAEA801887" : "",
+    "0B871573836734C6E8B52048DC0B03DFD2EDBD8A" : "Fandom-IOS-master\/",
+    "453D7A9DE501C0EBE45F88D0E44B028188C9F5B7" : "Fandom-IOS\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Fandomm",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -24,6 +26,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/simonnarang\/Fandom-IOS.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0B871573836734C6E8B52048DC0B03DFD2EDBD8A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/simonnarang\/Fandom-IOS-master.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44ACF144B8A77F275683FF48DDC0295652584BFA"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/simonnarang\/Fandom-IOS.git",

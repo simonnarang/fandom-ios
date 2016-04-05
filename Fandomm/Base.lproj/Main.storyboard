@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -80,6 +80,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="nextButtonOutlet" destination="HnZ-e2-6qH" id="Bok-4O-tEG"/>
                         <outlet property="password" destination="kQz-VD-SoG" id="zCb-99-lB9"/>
                         <outlet property="username" destination="bwF-Wz-4P1" id="B0A-91-kIw"/>
                         <segue destination="Y4p-Y2-eRA" kind="presentation" identifier="viewControllerToTBVC" id="yAn-OW-dfb"/>
@@ -213,6 +214,9 @@
                             <color key="tintColor" red="0.75686274509803919" green="0.035294117647058823" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="osP-Xi-ycp">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wL5-8z-QDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -453,7 +457,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="txw-Dr-URc">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="txw-Dr-URc" id="bwk-Cc-H3C">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -461,7 +465,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dsC-tq-v1o">
-                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dsC-tq-v1o" id="xaZ-mg-gFV">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -716,7 +720,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="only a few words please..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WoM-oD-ArA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="only a few words please..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WoM-oD-ArA">
                                 <rect key="frame" x="0.0" y="204" width="600" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="3c7-xi-ueW"/>
@@ -726,13 +730,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="write what you want to say!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7h-ko-sEe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="write what you want to say!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7h-ko-sEe">
                                 <rect key="frame" x="33" y="118" width="535" height="40"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfk-kJ-b0n">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfk-kJ-b0n">
                                 <rect key="frame" x="0.0" y="464" width="600" height="87"/>
                                 <color key="backgroundColor" red="0.23529411764705882" green="0.12549019607843137" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -762,7 +766,7 @@
                     </view>
                     <connections>
                         <outlet property="shareLink" destination="WoM-oD-ArA" id="uOl-tt-Qro"/>
-                        <segue destination="hjr-8J-BF7" kind="presentation" identifier="segueThree" id="drN-GB-dzQ"/>
+                        <segue destination="hjr-8J-BF7" kind="show" identifier="segueThree" id="drN-GB-dzQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUm-Hv-HfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -781,7 +785,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfU-ni-8zP">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfU-ni-8zP">
                                 <rect key="frame" x="0.0" y="464" width="600" height="87"/>
                                 <color key="backgroundColor" red="0.23529411759999999" green="0.12549019610000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -797,7 +801,7 @@
                                     <action selector="shareLinkButton:" destination="i3Z-zt-q4z" eventType="touchUpInside" id="V2K-Jg-g11"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s5b-0a-wDO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s5b-0a-wDO">
                                 <rect key="frame" x="0.0" y="64" width="605" height="383"/>
                             </imageView>
                         </subviews>
@@ -815,7 +819,7 @@
                         <outlet property="GalleryView" destination="s5b-0a-wDO" id="4Qx-dq-Sjv"/>
                         <outlet property="IMG" destination="s5b-0a-wDO" id="4kK-49-SEk"/>
                         <outlet property="pixyView" destination="s5b-0a-wDO" id="oz9-L4-GIv"/>
-                        <segue destination="hjr-8J-BF7" kind="presentation" identifier="segueSix" id="EH0-XK-F0c"/>
+                        <segue destination="hjr-8J-BF7" kind="show" identifier="segueSix" id="EH0-XK-F0c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Det-gz-idA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -834,10 +838,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DPV-V1-D9H">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DPV-V1-D9H">
                                 <rect key="frame" x="0.0" y="64" width="605" height="383"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDi-8Q-qAX">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDi-8Q-qAX">
                                 <rect key="frame" x="0.0" y="464" width="600" height="87"/>
                                 <color key="backgroundColor" red="0.23529411759999999" green="0.12549019610000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -863,7 +867,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="hjr-8J-BF7" kind="presentation" identifier="segueFour" id="QN2-ET-Y4E"/>
+                        <segue destination="hjr-8J-BF7" kind="show" identifier="segueFour" id="QN2-ET-Y4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ell-9c-053" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1235,8 +1239,8 @@
         <image name="fandomlogoicon-1" width="445" height="101"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Eup-rS-vlW"/>
-        <segue reference="EH0-XK-F0c"/>
+        <segue reference="yAn-OW-dfb"/>
+        <segue reference="QN2-ET-Y4E"/>
         <segue reference="Gy5-sK-xWL"/>
     </inferredMetricsTieBreakers>
 </document>

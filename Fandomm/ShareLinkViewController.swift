@@ -19,18 +19,27 @@ class ShareLinkViewController: UIViewController {
     //IBOUTLETS
     @IBOutlet weak var shareLink: UITextField!
     
+    //after text is typed in... share it!
+    func next() -> Void {
+        if self.shareLink.text != "" && self.shareLink.text != " " {
+            
+            //make user inputted text the text to share
+            self.shareLinkk = self.shareLink.text!
+            print("Text to be shared typed in by user @\(self.usernameThreeTextOne)")
+            performSegueWithIdentifier("segueThree", sender: nil)
+            
+            
+        }else{
+        
+            print("user didnt type anything in for sharing text")
+            
+        }
+    }
+    
     @IBAction func shareLinkButton(sender: AnyObject) {
         
-        //make user inputted text the text to share
-        self.shareLinkk = self.shareLink.text!
-        let linkShareActionSheetMenu = UIAlertController(title: nil, message: "which fandoms do you want to share this with?", preferredStyle: .ActionSheet)
-        let backAction = UIAlertAction(title: "back", style: .Cancel, handler: {
-            (alert: UIAlertAction!) -> Void in
-            print("Cancelled Link Share")
-        })
-        linkShareActionSheetMenu.addAction(backAction)
-        performSegueWithIdentifier("segueThree", sender: nil)
-        
+        self.next()
+    
     }
     
     //startup junk
@@ -60,8 +69,18 @@ class ShareLinkViewController: UIViewController {
         }
         
     }
+    
+    //dissmiss keyboard on tap
     func dismissKeyboard() {
         
         view.endEditing(true)
+    }
+    
+    //perform  posting with return key
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        self.next()
+        return false
+        
     }
 }

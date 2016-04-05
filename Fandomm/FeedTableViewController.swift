@@ -27,13 +27,22 @@ class FeedTableViewController: UITableViewController {
         print("Log (\(severity.rawValue)): \(debugString)")
     })
     
+    //func to handle refreshing
+    func handleRefresh(refreshControl: UIRefreshControl) {
+        self.tableView.reloadData()
+        print("feed refreshed")
+        refreshControl.endRefreshing()
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.clearsSelectionOnViewWillAppear = false
         let fandomLogo = UIImage(named: "fandomlogoicon-1")
         let imageView = UIImageView(image:fandomLogo)
         self.navigationItem.titleView = imageView
+        self.refreshControl?.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
         
     }
 
@@ -50,6 +59,8 @@ class FeedTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
+    
+    //TableView setup
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("custom", forIndexPath: indexPath) as! FeedTableViewCell
         self.redisClient.lRange("thefandomfandom", start: 0, stop: 9999) { (array, error) -> Void in
@@ -60,13 +71,14 @@ class FeedTableViewController: UITableViewController {
             }else {
                 
                 for fandommpost in array {
+                    
                         self.postFromDB = fandommpost as! String
                         self.newPost = self.postFromDB.componentsSeparatedByString(self.delimiter)
                         self.thearray.append(self.newPost[0])
                         self.theUsernamesArray.append(self.newPost[1])
                     
-                    
                 }
+                print("no error in feed in cell4row@indexpath")
             }
             
             cell.feedText.font = UIFont(name: "ArialMT", size: 20)
@@ -83,5 +95,8 @@ class FeedTableViewController: UITableViewController {
         return self.number
         
     }
-
+    
+    
+    //Refreshing from segue
+    
 }
