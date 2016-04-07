@@ -47,7 +47,7 @@ class ShareLinkViewController: UIViewController {
         super.viewDidLoad()
         
         //tap screen to close keyboard in case it doesnt close some other way
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ShareLinkViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         fandommcount = 0
     }

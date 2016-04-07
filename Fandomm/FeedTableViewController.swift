@@ -39,10 +39,12 @@ class FeedTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.clearsSelectionOnViewWillAppear = false
+        
         let fandomLogo = UIImage(named: "fandomlogoicon-1")
         let imageView = UIImageView(image:fandomLogo)
         self.navigationItem.titleView = imageView
-        self.refreshControl?.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
+        
+        self.refreshControl?.addTarget(self, action: #selector(FeedTableViewController.handleRefresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
         
     }
 
@@ -55,12 +57,12 @@ class FeedTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //TableView setup
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    
-    //TableView setup
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("custom", forIndexPath: indexPath) as! FeedTableViewCell
         self.redisClient.lRange("thefandomfandom", start: 0, stop: 9999) { (array, error) -> Void in
@@ -95,8 +97,5 @@ class FeedTableViewController: UITableViewController {
         return self.number
         
     }
-    
-    
-    //Refreshing from segue
     
 }

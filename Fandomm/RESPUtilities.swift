@@ -49,7 +49,7 @@ public class RESPUtilities
         let componentStrings:[String] = command.componentsSeparatedByString(" ")
         var count:Int = componentStrings.count
         if data {
-            count++
+            count += 1
         }
         requestString = "*\(count)\r\n"
         for componentString in componentStrings
@@ -124,7 +124,7 @@ public class RESPUtilities
         var array:[AnyObject] = [AnyObject]()
         var newString:String! = nil
 
-        for var index = currentIndex; index < stringComponents.count; index++
+        for var index = currentIndex; index < stringComponents.count; index += 1
         {
             if index < currentIndex {
                 continue

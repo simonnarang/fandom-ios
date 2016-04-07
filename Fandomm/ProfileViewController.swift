@@ -20,6 +20,14 @@ class ProfileViewController: UIViewController {
 
         //lebel user's username
         usernameTwo.text = "@" + usernameTwoTextFour
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.purpleColor()]
+        self.navigationController?.navigationBar.tintColor = UIColor.purpleColor()
+        self.navigationController?.navigationBar.translucent = true
+        if let font = UIFont(name: "Lato-Light.ttf", size: 34) {
+            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
+        }
+
         
     }
     

@@ -334,9 +334,9 @@ private class RedisPubSubCommander:NSObject, NSStreamDelegate
             if message.count == arraySize //got a full message
             {
                 self._responseHandler(message: message, error: nil)
-                currentIndex++
+                currentIndex += 1
                 lastValidIndex = currentIndex
-                foundMessages++
+                foundMessages += 1
                 
                 if currentIndex >= stringComponents.count && lastComponent != "" //fully parsed with extra component
                 {
@@ -344,7 +344,7 @@ private class RedisPubSubCommander:NSObject, NSStreamDelegate
                     break
                 }
                 
-                currentIndex++
+                currentIndex += 1
             }
             else if foundMessages == 0 //first array incomplete, just break with existing data
             {

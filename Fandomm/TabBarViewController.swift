@@ -14,6 +14,8 @@ class TabBarViewController: UITabBarController {
     var usernameTwo = String()
     var userFandoms = [AnyObject]()
     var number = Int()
+    var thearray = [AnyObject]()
+    var theUsernamesArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,8 @@ class TabBarViewController: UITabBarController {
         let dataTransferViewControllerOne = (self.viewControllers?[0] as! UINavigationController).viewControllers[0] as! FeedTableViewController
         dataTransferViewControllerOne.usernameTwoTextOne = usernameTwo
         dataTransferViewControllerOne.number = self.number
+        //dataTransferViewControllerOne.thearray = self.thearray
+        //dataTransferViewControllerOne.theUsernamesArray = self.theUsernamesArray
         
         //give search user info
         let dataTransferViewControllerTwo = (self.viewControllers?[1] as! UINavigationController).viewControllers[0] as! SearchTableViewController

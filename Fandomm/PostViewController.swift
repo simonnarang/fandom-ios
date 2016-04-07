@@ -10,19 +10,25 @@ import UIKit
 import MobileCoreServices
 
 class PostViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    //vars
     var userFandoms = [AnyObject]()
     var usernameTwoTextThree = String()
+    
+    //startup junk
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(userFandoms)
-        print("islife")
-        // Do any additional setup after loading the view.
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.purpleColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.purpleColor()]
+        
+        print("the following array should be \(usernameTwoTextThree)'s fandoms, if it is empty thre is an err, likely network connection: \(userFandoms)")
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "segueTwo" {
             let destViewContOne: ShareLinkViewController = segue.destinationViewController as! ShareLinkViewController
