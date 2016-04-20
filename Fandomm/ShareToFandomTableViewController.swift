@@ -78,7 +78,6 @@ class ShareToFandomTableViewController: UITableViewController {
             
             print("\(self.usernameThreeTextOne)fandoms")
             print("there is an error if \(self.userFandoms) != \(array)")
-            print("whatapp")
             
             for fandom in array {
                 

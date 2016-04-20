@@ -17,6 +17,8 @@ class FeedTableViewController: UITableViewController {
     let delimiter = " -"
     var postFromDB = String()
     var newPost = [String]()
+    let delimiter4Images = "^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$"
+    var newImage = [String]()
     
     
     //redis connection
@@ -73,12 +75,22 @@ class FeedTableViewController: UITableViewController {
             }else {
                 
                 for fandommpost in array {
+                    self.newImage = (fandommpost as! String).componentsSeparatedByString(self.delimiter4Images)
+                    print("yo\(self.newImage[0]) blob")
                     
+                    if self.newImage[0] != fandommpost as! String {
+                        self.postFromDB = fandommpost as! String
+                        self.newPost = self.postFromDB.componentsSeparatedByString(self.delimiter)
+                        self.thearray.append(NSData(base64EncodedString: self.newImage[0], options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)!)
+                        print("crazy")
+                        
+                    } else{
                         self.postFromDB = fandommpost as! String
                         self.newPost = self.postFromDB.componentsSeparatedByString(self.delimiter)
                         self.thearray.append(self.newPost[0])
                         self.theUsernamesArray.append(self.newPost[1])
-                    
+
+                    }
                 }
                 print("no error in feed in cell4row@indexpath")
             }

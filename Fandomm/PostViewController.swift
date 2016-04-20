@@ -40,6 +40,7 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         }else if segue.identifier == "segueFive" {
             let destViewContTwo: ShareGalleryViewController = segue.destinationViewController as! ShareGalleryViewController
             destViewContTwo.userFandoms = self.userFandoms
+            destViewContTwo.loggedInUsername = usernameTwoTextThree
         }else {
         print("there is an undocumented segue form the post tab")
         }
