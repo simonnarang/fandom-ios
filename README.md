@@ -4,4 +4,4 @@ IOS Client for Fandom, an App for Sharing Thoughts in Groups
 # About  
 * Developed in Xcode 7 with Swift 2.3
 * Uses Swift's Built in RESTful Library to make calls to the Fandom Back End
-* Stores User Data and Posts in a Redis Database
+* Stores User Data and Posts in a Redis Database as Key/Value Pairs and Lists
